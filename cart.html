@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | CampusBites</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="shortcut icon" href="/Images/FAVICON/favicon-32x32.png" type="image/x-icon">
+</head>
+<body style="background: rgb(211, 250, 239);">
+    <section class="cart-hero">
+  <div class="cart-hero-bg">
+    <!-- floating icons -->
+    <span class="float-icon i1"><img src="https://cdn-icons-png.flaticon.com/128/3496/3496508.png" alt="Donut"></span>
+    <span class="float-icon i2"><img src="https://cdn-icons-png.flaticon.com/128/3075/3075977.png" alt="Burger"></span>
+    <span class="float-icon i3"><img src="https://cdn-icons-png.flaticon.com/128/1404/1404945.png" alt="Pizza"></span>
+  </div>
+
+  <div class="cart-hero-wrapper">
+    <div class="cart-hero-content">
+      <h1>
+        Review Your<br>
+        <span>Order</span>
+      </h1>
+
+      <p>
+        Before checkout, take a moment to review your items,
+        adjust quantities, and confirm everything is just right.
+      </p>
+    </div>
+
+    <div class="cart-hero-visual">
+      <div class="plate-circle">
+        <img src="/Images/CampusBites.png" alt="logo" class="plate-logo">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ================= CART ITEM LIST ================= -->
+<section class="cart-items-section">
+
+  <!-- EMPTY STATE -->
+  <div class="cart-empty-state" id="cartEmpty">
+    <div class="empty-illustration"><img src="https://cdn-icons-png.flaticon.com/128/2331/2331970.png" alt="Cart"></div>
+    <h3>Your plate is empty</h3>
+    <p>Add some campus favorites to get started</p>
+    <a href="menu.html" class="go-menu-btn">Browse Menu</a>
+  </div>
+
+  <!-- ITEMS WILL BE INJECTED HERE BY JS-->
+  <div class="cart-items-list" id="cartItems"></div>
+
+</section>
+<div class="checkout-wrapper">
+  <!-- ================= BILL SUMMARY ================= -->
+<section class="bill-summary">
+  <h3 class="bill-title">Bill Summary</h3>
+
+  <div class="bill-row">
+    <span>Subtotal</span>
+    <span id="billSubtotal">₹0</span>
+  </div>
+
+  <div class="bill-row">
+    <span>Platform Fee</span>
+    <span id="billPlatform">₹10</span>
+  </div>
+  <div class="bill-row">
+    <span>GST (5%)</span>
+    <span id="billGST">₹0</span>
+  </div>
+  <div class="bill-divider"></div>
+  <div class="bill-total">
+    <span>Total Payable</span>
+    <span id="billTotal">₹0</span>
+  </div>
+</section>
+<section class="payment-section">
+    <h3 class="payment-title">Payment Method</h3>
+
+    <label class="payment-option">
+      <input type="radio" name="payment">
+      <span>Online Payment</span>
+    </label>
+
+    <label class="payment-option">
+      <input type="radio" name="payment">
+      <span>Cash on Delivery</span>
+    </label>
+
+    <button class="pay-btn" id="payBtn" disabled>
+      Proceed to Pay →
+    </button>
+  </section>
+</div>
+<footer class="cart-footer">
+  <div class="cart-footer-container">
+    <div class="cart-footer-brand">
+      <span class="brand-name">Campus<span>Bites</span></span>
+      <p class="brand-line">
+        Built for campus life · Fast prep · Transparent pricing
+      </p>
+    </div>
+    <div class="cart-footer-nav">
+      <a href="about.html">About</a>
+      <span>•</span>
+      <a href="contact.html">Contact</a>
+      <span>•</span>
+      <a href="rules.html">Rules & Policies</a>
+    </div>
+    <div class="cart-footer-trust">
+      <span>Secure payments</span>
+      <span>•</span>
+      <span>COD available</span>
+    </div>
+  </div>
+  <div class="cart-footer-bottom">
+    © 2026 CampusBites · Built by students, for students
+  </div>
+</footer>
+<script src="/JS/cart.js"></script>
+</body>
+</html>
